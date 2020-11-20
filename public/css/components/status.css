@@ -1,0 +1,26 @@
+section.status {
+    /*background-image: linear-gradient(to bottom, #e1ffe925 0%, #e1ffe9 50%, #e1ffe925 100% );*/
+    /*padding-top: 30px;*/
+    z-index: -2;
+}
+
+section.status .status-element {
+    /*background-color: coral;*/
+    text-align: center;
+}
+
+.status-element img {
+    width: 100px;
+}
+
+.status-element .status-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.status-element .status-number {
+    padding-top: 10px;
+    font-size: 2rem;
+    color: #000;
+    font-weight: 600;
+}

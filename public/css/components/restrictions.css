@@ -1,0 +1,9 @@
+.restrictions .img-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.restrictions img {
+    width: 100%;
+}

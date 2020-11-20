@@ -1,0 +1,19 @@
+.question h3 {
+    background-color: #44c27e;
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.question p {
+    padding-left: 5%;
+    opacity: 1;
+    font-size: 1.1rem;
+}
+
+.question p.text-arabic {
+    padding-left: 0;
+    padding-right: 5%;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <!--Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+    <!--Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0">
+
+<script src="/js/loader.js"></script>
+    <!--<script src="js/loader.js"></script>-->
+    <script src="/js/countUp.js" type="module"></script>
+
+    <!--Imporing Bootstrap-->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+    <!--Importing AOS.js Library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Impoting Fonts-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Rakkas&family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Importing Stylesheet-->
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>A7mini DZ</title>
+</head>
+<body id="document">
+
+    <div id="loader" class="d-flex justify-content-center align-items-center">
+        <div class="loader-img-wrapper"><img src="/imgs/Ahmini%20logotype%20couleur.svg" alt=""></div>
+    </div>
+
+
+
+    <div id="content-wrapper">
+
+        <div class="green-number flex-column flex-md-row d-flex position-fixed justify-content-between align-items-baseline">
+            <img src="/imgs/phone.svg" alt="">
+            <h3 class="mobile-num">30<br>30</h3>
+            <h3>3030</h3>
+        </div>
+
+        <header class="d-flex flex-row justify-content-between align-items-center">
+            <div class="header-bg"></div>
+
+            <ul class="d-flex flex-sm-row align-items-center">
+                <li><a href="/index.html#faq">FAQ</a></li>
+                <li><a href="/index.html#symptoms">SYMPTOMES</a></li>
+                <li><a href="#mission">MISSION</a></li>
+                <li><a href="#partners">A PROPOS</a></li>
+                <li class="special-nav"><a href="./index.html#status">STATUS EN ALGÉRIE</a></li>
+            </ul>
+
+            <a href="./index.html" style="display: block;  "><img src="imgs/logo-compact.svg" alt="logo" class="logo visible"></a>
+
+            <ul class="d-flex flex-sm-row-reverse align-items-center text-arabic">
+                <li><a href="./index.html#faq">اسثلة</a></li>
+                <li><a href="./index.html#symptoms">أعراض</a></li>
+                <li><a href="#mission">مهمتنا</a></li>
+                <li><a href="#partners">ما أحمني</a></li>
+                <li class="special-nav"><a href="./index.html#status">الحال في الجزائر</a></li>
+            </ul>
+
+            <div class="btn btn-burger align-self-center" onclick="openMobileMenu()"><img src="imgs/menu.svg" alt="">
+            </div>
+            <div class="mobile-menu closed-menu">
+                <div class="btn btn-close align-self-center " onclick="closeMobileMenu()"><img src="imgs/close-btn.svg" alt=""></div>
+                <ul class="d-flex flex-column align-items-center justify-content-around w-100 text-center">
+                    <li onclick="closeMobileMenu()"><a href="./index.html#map">Statut <br> <span class="text-arabic ">الوضع في البلد</span></a></li>
+                    <li onclick="closeMobileMenu()"><a href="./index.html#symptoms">Symptomes <br>
+                        <span class="text-arabic ">أعراض</span></a></li>
+                    <li onclick="closeMobileMenu()"><a href="./index.html#symptoms">Recommendations <br>
+                        <span class="text-arabic ">ارشادات</span></a></li>
+                    <li onclick="closeMobileMenu()"><a href="./index.html#faq">Questions <br> <span class="text-arabic ">أسئلة</span></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="hero" class="hero">
+            <div class="container d-flex flex-column justify-content-between"
+                 data-aos="fade-in" data-aos-anchor-placement="top-center" data-aos-duration="800">
+                <div class="bg-container flex-grow-1 flex-md-grow-0">
+                    <img src="imgs/Ahmini%20logotype%20couleur.svg" alt="">
+                </div>
+                <h3 class="text-center flex-grow-1"> وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعاً</h3>
+            </div>
+        </section>
+
+        <section id="partners" class="partners">
+            <div class="container">
+                <div class="row">
+                    <p class="section-header-upper w-50">Ils nous font confiance</p>
+                    <p class="section-header-upper w-50 text-arabic text-right">يثقون فينا</p>
+                </div>
+                <div class="row">
+                    <h2 class="section-header w-50 text-right text-arabic d-md-none">حول هذه المبادرة</h2>
+                    <h2 class="section-header w-50">Autour de cette initiative</h2>
+                    <h2 class="section-header w-50 text-right text-arabic d-none d-md-block">حول هذه المبادرة</h2>
+                </div>
+                <div class="row">
+                    <div class="slider d-none d-md-flex">
+                        <input id="slider1" type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+                        <input id="slider2" type="radio" name="slider" title="slide2" class="slider__nav"/>
+                        <input id="slider3" type="radio" name="slider" title="slide3" class="slider__nav"/>
+                        <input id="slider4" type="radio" name="slider" title="slide4" class="slider__nav"/>
+                        <div class="slider__inner">
+                            <div class="slider__contents">
+                                <div class="row w-100 align-items-center">
+                                    <div class="col-12 col-md-3"><img src="imgs/FAP.png" class="w-50" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/aaa.png" class="w-100"></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/sami.png" class="w-50" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/SAOM.png" class="w-50" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="slider__contents align-items-center">
+                                <div class="row w-100">
+                                    <div class="col-12 col-md-3"><img src="imgs/SNAPO.png" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/CNOP.png" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/medsa.jpg" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/sado.png" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="slider__contents">
+                                <div class="row w-100">
+                                    <div class="col-12 col-md-3"><img src="imgs/sai.png" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/sapho.png" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/sss.jpg" alt=""></div>
+                                    <div class="col-12 col-md-3"><img src="imgs/safro.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="js/slider.js"></script>
+                </div>
+                <div class="row mobile-imgs d-md-none">
+                    <div class="col-6 col-sm-4"><img src="imgs/FAP.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/aaa.png" class="w-100" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/sami.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/SAOM.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/SNAPO.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/CNOP.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/medsa.jpg" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/sado.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/sai.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/sapho.png" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/sss.jpg" alt=""></div>
+                    <div class="col-6 col-sm-4"><img src="imgs/safro.png" class="w-100" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="mission">
+            <div class="container">
+                <div class="mission-bg"><img src="imgs/virus-bg.svg" alt="corona virus floating" class=""></div>
+                <div class="row">
+                    <p class="section-header-upper w-50">Qui somme nous</p>
+                    <p class="section-header-upper w-50 text-right text-arabic">من نكون</p>
+                </div>
+                <div class="row">
+                    <h2 class="section-header w-50 text-right text-arabic d-md-none">لماذا أحمني</h2>
+                    <h2 class="section-header w-50">Pourquoi A7mini</h2>
+                    <h2 class="section-header w-50 text-right text-arabic d-none d-md-block">لماذا أحمني</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-md-0 mb-4 col-xs-12" data-aos="fade-up"
+                         data-aos-anchor-placement="top-bottom">
+                        <div class="mission-container">
+                            <h3>Mission | <span class="text-arabic">مهمتنا</span></h3>
+                            <div class="mission-icon"><img src="imgs/brain.svg" width="100" alt=""></div>
+                            <p class="text-right"><span class="text-arabic text-right">"فريق مبادرة أحميني يعمل على نشر التّوصيات و المعلومات من مصادر موثوقة لمساعدة متعاملي قطاع الصّحة وكافة المواطنين على التّصدي لانتشار جائحة كوفيد-19
+                            <p>Partager les recommandations et les informations les plus fiables destinées à freiner la propagation pour les professionnels de la santé et le grand public.</p>
+ </span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-md-0 mb-4 col-xs-12" data-aos="fade-up" data-aos-delay="100"
+                         data-aos-anchor-placement="top-bottom">
+                        <div class="mission-container">
+                            <h3>Vision | <span class="text-arabic">نظرتنا</span></h3>
+                            <div class="mission-icon"><img src="imgs/shield.svg" width="100" alt=""></div>
+                            <p class="text-right"><span class="text-arabic">أحميني هي مبادرة من طرف مِهنيِي الصّحة الذين تتمثّل رؤيتهم في حماية صحّة مواطنيهم عن طريق الحد من انتشار مرض كوفيد-19</span></p>
+                            <p>A7mini est une initiative de professionnels de la santé qui ont pour vision de protéger la santé de leurs concitoyens en limitant la propagation de la maladie COVID-19.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="about_footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <h2 class="text-center w-100">Tous contre le Coronavirus !</h2>
+                            <h3 class="text-center w-100">We can fight it together</h3>
+                            <div class="links d-flex">
+                                <a id="facebook" href="https://www.facebook.com/A7miniCOVID19/">
+                                    <img src="imgs/facebook.svg" alt="">
+                                </a>
+                                <a id="mail" href="">
+                                    <img src="imgs/youtube.svg" alt="">
+                                </a>
+                                <a id="twitter" href="https://twitter.com/A7miniCovid19">
+                                    <img src="imgs/twitter.svg" alt="">
+                                </a>
+                                <a  href="">
+                                    <img src="imgs/instagram.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="imgs/linkedin-logo.svg" alt="">
+                                </a>
+                            </div>
+                            <p class="pt-4 text-white"><b>a7mini@gmail.com</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright w-100 text-center">&copy 2020 Fédération Algérienne de Pharmacie. Tous Droits
+                Réservés.</p>
+        </footer>
+    </div>
+
+    <!--Script-->
+    <script src="/js/headerAbout.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+</html>

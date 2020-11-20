@@ -1,0 +1,9 @@
+.decisions img {
+    width: 100%;
+}
+
+.decisions .img-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}

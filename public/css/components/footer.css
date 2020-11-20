@@ -1,0 +1,127 @@
+footer {
+    background-image: linear-gradient(to bottom, #e7fff1 10%, #3aa56b 90%);
+    height: 50vh;
+    padding: 5% 0 50px;
+    margin-top: -100px;
+    position: relative;
+    z-index: 10;
+    color: #595959;
+}
+
+
+footer h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+
+
+
+#youtube:hover .youtube,#twitter:hover .twitter,
+#facebook:hover .facebook,#mail:hover .mail,
+#instagram stop
+{
+    transition: ease-in-out all .3s;
+    -webkit-transition: ease-in-out all .3s;
+    -moz-transition: ease-in-out all .3s;
+    -ms-transition: ease-in-out all .3s;
+    -o-transition: ease-in-out all .3s;
+}
+#youtube:hover .youtube{
+    fill: red;
+}
+#twitter:hover .twitter{
+    fill: #1c9deb;
+}
+#facebook:hover .facebook{
+    fill: #4267b2;
+}
+#mail:hover .mail{
+    fill: #2a3348;
+}
+#instagram:hover #stop1 {
+    stop-color: #F8ED34;
+}
+#instagram:hover #stop2 {
+    stop-color: #EA118D;
+}
+#instagram:hover #stop3 {
+    stop-color: #2E368F;
+}
+
+.links{
+    width: 50%;
+    min-width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*margin-top: 50px;*/
+}
+
+
+.links a {
+    display: block;
+    height: min-content;
+}
+.links  img {
+    height:  50px;
+    cursor: pointer;
+    color: pink;
+}
+
+#youtube img {
+    height: 67px;
+}
+
+@media screen and (max-width: 400px) {
+    .links img {
+        height:  35px;
+    }
+    #youtube img {
+        height: 45px;
+    }
+
+    .links {
+        min-width: 300px;
+    }
+}
+
+.copyright {
+    display: inline;
+    position: absolute;
+    font-size: 1rem;
+    font-family: 'Lato', "Poppins", sans-serif;
+    color: white;
+    bottom: 5px;
+    z-index: 3;
+    opacity: 1;
+}@media screen and (max-width: 400px) {
+    .copyright {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width:764px){
+    .follow-us-container{
+        padding-bottom: 30px;
+    }
+    .copyright{
+        bottom: 0;
+    }
+    /*.links{*/
+        /*width: 140px;*/
+    /*}*/
+    /*.links  img{*/
+        /*width: 30px;*/
+    /*}*/
+}
+
+footer#about_footer {
+    margin-top: 50px;
+    color:white;
+    z-index: 0;
+    background-image: unset;
+    background-color: #3aa56b;
+}

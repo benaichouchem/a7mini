@@ -1,0 +1,24 @@
+.recommendation-hero {
+    height: 90vh;
+    overflow: hidden;
+    /*width: 100vw;*/
+    color: #202020;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .recommendation-hero h1 {
+        font-size: 2.7rem;
+    }
+}
+
+.recommendation-hero .img-wrapper {
+    width: 25%;
+    margin: 7% auto 0;
+    min-width: 300px;
+}
+
+.recommendation-hero .img-wrapper img {
+    width: 100%;
+}
+

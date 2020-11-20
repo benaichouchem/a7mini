@@ -1,0 +1,158 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    height: 100vh;
+    padding: 0;
+    margin: 0px;
+}
+
+:root {
+    --vh: 0;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+
+}
+
+body {
+    width: 100%;
+    /*height: 100%;*/
+    font-family: "Fira Sans", sans-serif;
+    color: #5e5e5e;
+    overflow-x: hidden;
+}
+
+body#document { /*Specifying the ID since the imported graph has a body tag within*/
+    font-family: "Fira Sans", sans-serif;
+    color: #0e0e0e;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+#content-wrapper {
+    /*height: 100vh;*/
+    height: 100%;
+}
+
+
+
+p {
+    opacity: 1;
+}
+p > .text-arabic {
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h3 > .text-arabic {
+    font-size: 1.2em;
+}
+
+section {
+    margin: 25px 0;
+}
+
+.section-header {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.section-header.text-arabic {
+    font-weight: 600;
+}
+
+
+
+.section-header-upper {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: Poppins, sans-serif;
+    color: #02C084;
+    margin: 0 0 10px;
+    opacity: 1;
+}
+
+.section-header-upper.text-arabic {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 800px) {
+    .section-header {
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 60px;
+    }
+    .section-header.text-arabic {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-header-upper {
+        padding: 0 4% 0;
+    }
+}
+
+
+#button-ministere {
+    margin-top: 15px;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    padding: 10px 20px;
+    border: 2px solid #44c27e;
+    border-radius: 25px;
+    background-color: #fff !important;
+    color: #1b1e21;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#button-ministere:hover {
+    background-color: #44c07c !important;
+    color: white;
+}
+
+/*   Rules for arabic font changing   */
+.text-arabic {
+    font-family: "Cairo", sans-serif;
+}
+.section-header-upper.text-arabic {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+p > .text-arabic {
+    font-size: inherit;
+}
+h3 > .text-arabic {
+    font-size: 2rem;
+}
+
+h5.text-arabic {
+    font-weight: 600 !important;
+}
+
+section {
+    padding-top: 12vh;
+    margin-top: -12vh;
+}

@@ -1,0 +1,40 @@
+.mission {
+    position: relative;
+}
+.mission .mission-bg {
+    position: absolute;
+    right: 0;
+    bottom: -70%;
+    width: 800px;
+    z-index: -1;
+}
+.mission .mission-bg img {
+    position: relative;
+    width: 800px;
+    opacity: 0.05;
+}
+
+@media screen and (max-width: 700px) {
+    .mission-bg {
+        display: none;
+    }
+}
+
+.mission .mission-container {
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    padding: 10px 15px;
+    box-shadow: 1px 1px 10px 2px rgba(51, 160, 108, 0.11);
+    background-color: #fff;
+}
+
+.mission .mission-container h3 {
+    font-weight: 600;
+    text-align: center  ;
+}
+
+.mission .mission-container .mission-icon {
+    margin: 10px auto;
+    width: 100px;
+}

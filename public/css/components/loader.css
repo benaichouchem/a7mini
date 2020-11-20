@@ -1,0 +1,52 @@
+#loader {
+    position: fixed;
+    background-color: #f8f8f8;
+    width: 100vw;
+    height: 100vh;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#loader .loader-img-wrapper {
+    width: 50%;
+    animation: scaleout 3s ease-in-out infinite alternate;
+}
+
+@keyframes scaleout {
+    from   {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    to{
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+#loader .loader-flag-img {
+    width: 5%;
+    min-width: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+}
+
+#content-wrapper {
+    opacity: 0;
+}

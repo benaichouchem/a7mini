@@ -1,0 +1,36 @@
+.summary {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: inherit;
+    padding: 15px 15px 15px 30px;
+    -ms-overflow-style:  none;
+    overflow: -moz-scrollbars-none;
+}
+
+.summary::-webkit-scrollbar {
+    display: none;
+}
+
+.summary > ol {
+    padding: 0;
+    padding-left: 15px;
+}
+
+.summary > ol > li {
+    color: #308656;
+    cursor: pointer;
+}
+
+.summary ul > li {
+    color: #5e5e5e;
+    cursor: pointer;
+}
+
+.summary p {
+    opacity: 1;
+}
+
+.summary details summary {
+    list-style: none;
+}

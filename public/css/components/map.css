@@ -1,0 +1,10 @@
+@media screen and (max-width: 800px) {
+    h3 {
+        font-size: 1.7rem;
+    }
+}
+
+.map-wrapper {
+    overflow-x: -moz-scrollbars-none;
+    overflow-y: hidden;
+}

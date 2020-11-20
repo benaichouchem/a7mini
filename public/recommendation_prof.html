@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height,     minimum-scale=1, initial-scale=1.0">
+
+    <script src="js/loader.js"></script>
+    <!--<script src="js/loader.js"></script>-->
+    <script src="js/countUp.js" type="module"></script>
+    <!--Imporing Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--Importing AOS.js Library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Impoting Fonts-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Rakkas|Tajawal&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Rakkas&family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Importing Stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>A7mini - Recommendations Pour le Publique</title>
+</head>
+<body id="">
+
+<header id="header" class="header-recommendation d-flex flex-row justify-content-between align-content-center">
+    <div class="header-bg"></div>
+
+    <ul class="d-flex flex-sm-row align-items-center">
+        <li><a href="./index.html#faq">FAQ</a></li>
+        <li><a href="./index.html#symptoms">SYMPTOMES</a></li>
+        <li><a href="./index.html#mission">MISSION</a></li>
+        <li><a href="./index.html#partners">A PROPOS</a></li>
+        <li class="special-nav"><a href="./index.html#status">STATUS EN ALGÉRIE</a></li>
+    </ul>
+
+    <a href="./index.html" style="display: block;  "><img src="imgs/logo-compact.svg" alt="logo"
+                                                          class="logo visible"></a>
+
+    <ul class="d-flex flex-sm-row-reverse align-items-center text-arabic">
+        <li><a href="./index.html#faq">اسثلة</a></li>
+        <li><a href="./index.html#symptoms">أعراض</a></li>
+        <li><a href="./index.html#mission">مهمتنا</a></li>
+        <li><a href="./index.html#partners">ما أحمني</a></li>
+        <li class="special-nav"><a href="./index.html#status">الحال في الجزائر</a></li>
+    </ul>
+
+    <div class="btn btn-burger align-self-center" onclick="openMobileMenu()"><img src="imgs/menu.svg" alt="">
+    </div>
+    <div class="mobile-menu closed-menu">
+        <div class="btn btn-close align-self-center " onclick="closeMobileMenu()"><img src="imgs/close-btn.svg" alt="">
+        </div>
+        <ul class="d-flex flex-column align-items-center justify-content-around w-100 text-center">
+            <li onclick="closeMobileMenu()"><a href="./index.html#map">Statut <br> <span class="text-arabic ">الوضع في البلد</span></a>
+            </li>
+            <li onclick="closeMobileMenu()"><a href="./about.html">A propos <br> <span
+                    class="text-arabic ">من نكون</span></a></li>
+            <li onclick="closeMobileMenu()"><a href="./index.html#symptoms">Symptomes <br>
+                <span class="text-arabic ">أعراض</span></a></li>
+            <li onclick="closeMobileMenu()"><a href="./index.html#faq">Questions <br> <span
+                    class="text-arabic ">أسئلة</span></a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="recommendation-hero d-flex flex-column justify-content-around">
+    <div class="img-wrapper">
+        <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path fill="#02C084" d="M447.82,390.192c-5.376-32.232-27.976-58.68-58.976-69.016l-68.84-22.944V288h-16v15.024l-11.936,47.752L259.756,312
+                                                    h-23.504l-32.312,38.776l-11.936-47.752V288h-16v10.232l-68.832,22.944c-31,10.336-53.6,36.784-58.976,69.016L30.556,496h434.888
+                                                    L447.82,390.192z M256.004,480V352h-16v128h-119.16l7.12-71.2l-15.92-1.592l-7.28,72.8H49.452l14.52-87.176
+                                                    c4.4-26.376,22.888-48.008,48.256-56.472l47.776-15.928v72.704c-13.768,3.576-24,16-24,30.864c0,17.648,14.352,32,32,32
+                                                    s32-14.352,32-32c0-14.864-10.232-27.288-24-30.864v-78.04l2.336-0.776l17.728,70.904L243.756,328h8.496l47.688,57.224
+                                                    l17.728-70.904l2.336,0.776v63.952l-30.312,15.16c-10.904,5.456-17.688,16.424-17.688,28.624V432c0,17.648,14.352,32,32,32h8v-16
+                                                    h-8c-8.824,0-16-7.176-16-16v-9.168c0-6.096,3.392-11.584,8.84-14.312l31.16-15.576l31.16,15.576
+                                                    c5.448,2.728,8.84,8.216,8.84,14.312V432c0,8.824-7.176,16-16,16h-8v16h8c7.968,0,15.168-3.032,20.776-7.864L375.164,480H256.004
+                                                    z M168.004,408c8.824,0,16,7.176,16,16c0,8.824-7.176,16-16,16c-8.824,0-16-7.176-16-16C152.004,415.176,159.18,408,168.004,408z
+                                                     M391.244,480l-7.28-72.8l-3.872,0.384c-3.064-5.648-7.76-10.368-13.776-13.376l-30.312-15.152v-58.624l47.776,15.928
+                                                    c25.368,8.456,43.856,30.096,48.256,56.472L446.556,480H391.244z"/>
+                                                <path fill="#02C084" d="M147.54,215.552c4.08,14.04,11.616,26.912,22.24,37.536l31.192,31.2c7.552,7.552,17.6,11.712,28.288,11.712h37.488
+                                                    c10.688,0,20.736-4.16,28.288-11.712l31.192-31.2c10.624-10.624,18.152-23.504,22.24-37.536
+                                                    c19.936-2.256,35.536-19.024,35.536-39.552c0-13.128-6.448-24.704-16.248-32h0.248v-24c0-66.168-53.832-120-120-120
+                                                    s-120,53.832-120,120v24h0.248c-9.8,7.296-16.248,18.872-16.248,32C112.004,196.528,127.604,213.296,147.54,215.552z
+                                                     M336.004,190.864c0,19.232-7.496,37.312-21.088,50.912l-31.192,31.2c-4.536,4.528-10.56,7.024-16.976,7.024H229.26
+                                                    c-6.416,0-12.448-2.496-16.976-7.024l-31.192-31.2c-13.592-13.6-21.088-31.68-21.088-50.912V152h59.16
+                                                    c18.704,0,36.856-5.008,52.84-14.544c15.984,9.536,34.144,14.544,52.84,14.544h11.16V190.864z M368.004,176
+                                                    c0,10.552-6.896,19.44-16.376,22.64c0.224-2.568,0.376-5.16,0.376-7.776v-37.392C361.292,156.784,368.004,165.584,368.004,176z
+                                                     M144.004,120c0-57.344,46.656-104,104-104s104,46.656,104,104v16.808c-2.584-0.528-5.264-0.808-8-0.808h-19.16
+                                                    c-17.288,0-34.024-5.064-48.408-14.656l-4.432-2.96l-4.44,2.96C253.18,130.936,236.452,136,219.164,136h-67.16
+                                                    c-2.736,0-5.416,0.28-8,0.808V120z M144.004,153.472v37.392c0,2.616,0.152,5.208,0.376,7.784
+                                                    c-9.48-3.208-16.376-12.096-16.376-22.648C128.004,165.584,134.716,156.784,144.004,153.472z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    </svg>
+    </div>
+    <div class="hero-header-wrapper"><h1 class="text-center text-arabic">ارشادات لمتعاملي قطاع الصحة
+        المــواطنـــيــن</h1>
+        <h2 class="text-center mb-4">Recommendations Pour les Professionnels de La Santé </h2></div>
+</div>
+
+<div class="container-fluid">
+    <div class="recommendations">
+        <!--                Conseil-->
+        <div class="recommendation"
+             data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="recommendation-title"><h3 class="font-weight-normal">1. Fiche Conseil au patient</h3></div>
+            <div class="recommendation-content recommendation-1">
+                <h4 class="text-center my-3">Quels conseils un pharmacien peut-il donner ?</h4>
+<!--                <h4 class="text-center mb-3 text-arabic">ما هي النصائح التي يمكن أن يقدمها الصيدلي؟</h4>-->
+
+                <div class="conseil">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h3>Si</h3>
+                            <ul>
+                                <li>Aucun symptome de fièvre, difficultés respiératoir</li>
+                                <li><b>Ou</b> Contact récent avec une personne suspectée ou
+                                    confirmée avoir COVID19
+                                </li>
+                                <li><b>Ou</b> historique d’un voyage récent dans une zone
+                                    touchée.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h3>Alors</h3>
+                            <ul>
+                                <li>Rassurer</li>
+                                <li>Mettre l’accent sur les actions préventives</li>
+                                <li>Recommander autant que possible
+                                    l'éloignement social, le confinement à domicile
+                                    et éviter les déplacements non essentiels
+                                </li>
+                                <li>Fournir des conseils et des informations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conseil">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h3>Si</h3>
+                            <ul>
+                                <li>Symptome de fièvre, difficultés respiératoir</li>
+                                <li><b>Et</b> Contact récent avec une personne suspectée ou
+                                    confirmée avoir COVID19
+                                </li>
+                                <li><b>Et</b> historique d’un voyage récent dans une zone
+                                    touchée.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h3>Alors</h3>
+                            <ul>
+                                <li>Rassurer et isoler, dans la mesure du possible,
+                                    le patient dans une pièce séparée.</li>
+                                <li>Ne pas examiner physiquement le patient et
+                                    renforcer les mesures de protection.</li>
+                                <li>Recommander une stricte distanciation sociale
+                                    (y compris avec la famille et les proches), la
+                                    mise en quarantaine à domicile et éviter tous
+                                    les voyages pendant au moins 14 jours.
+                                </li>
+                                <li>Appeler le 3030 ou le SAMU.</li>
+                                <li>Fournir des conseils et des informations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conseil">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h3>Si</h3>
+                            <ul>
+                                <li>Aucun Symptome de fièvre, difficultés respiératoir</li>
+                                <li><b>Ou</b> Contact récent avec une personne suspectée ou
+                                    confirmée avoir COVID19
+                                </li>
+                                <li><b>Et/Ou</b> historique d’un voyage récent dans une zone
+                                    touchée.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h3>Alors</h3>
+                            <ul>
+                                <li>Rassurer et informer que le risque d’infection
+                                    peut exister</li>
+                                <li>Recommander une stricte distanciation sociale
+                                    (y compris avec la famille et les proches), la
+                                    mise en quarantaine à domicile et éviter tous
+                                    les voyages pendant au moins 14 jours.
+                                </li>
+                                <li>Recommander le traçage d’historique de
+                                    personnes avec lesquelles y a eu contact.</li>
+                                <li>Si les symptômes apparaissent dans les14
+                                    jours suivant un contact avec une personne
+                                    confirmée ou suspectée avoir COVID19,Appeler le 3030 ou le SAMU.</li>
+                                <li>Fournir des conseils et des informations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conseil">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h3>Si</h3>
+                            <ul>
+                                <li>Voyage inévitable planifié dans les zones touchées</li>
+                                <li><b>Ou</b> Contact récent avec une personne suspectée ou
+                                    confirmée avoir COVID19
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h3>Alors</h3>
+                            <ul>
+                                <li>Rassurer et informer sur le mode de
+                                    transmission</li>
+                                <li>Mettre l’accent sur les mesures préventives
+                                    (lavage fréquent des mains, éviter de toucher
+                                    le visage).
+                                </li>
+                                <li>Mettre l’accent sur la nécessité du port des
+                                    équipements de protection personnels
+                                    appropriés.</li>
+                                <li>Fournir des conseils et des informations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--               Usage-->
+        <div class="recommendation"
+             data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+            <div class="recommendation-title"><h3 class="font-weight-normal">2. Usage des EPI</h3></div>
+            <div class="recommendation-content">
+                <h3 class="my-3 text-center">EQUIPEMENTS DE PROTECTION INDIVIDUELS (EPI)</h3>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h4 class="text-center my-1">Etapes pour mettre les EPI</h4>
+                        <h5>Se préparer</h5>
+                        <ul>
+                            <li>Préparer les EPI à utiliser (en fonction du besoin) et vérifier leur intégrité</li>
+                            <li>Se munir d’un miroir ou se faire aider par un ami</li>
+                            <li>Retirer les bijoux et attacher les cheveux long</li>
+                        </ul>
+                        <h5>Se désinfecter les mains :</h5>
+                        <div class="m-auto">
+                            <img src="/imgs/recoEPI/desinf.png" alt="">
+                            <img src="/imgs/recoEPI/laver.png" alt="">
+                        </div>
+
+                        <div class="w-100"><br></div>
+
+                        <h5>Etape 1: La blouse</h5>
+                        <p>Enfiler la blouse, l'attacher au cous et à la taille</p>
+                        <img src="/imgs/recoEPI/lablouse.png" alt="">
+
+                        <div class="w-100"></div>
+
+                        <h5>Etape 2: Masque chirurgical</h5>
+                        <div class="row">
+                            <div class="col-8">A- Placer un maque
+                                sur le visage en
+                                couvrant
+                            </div>
+                            <div class="col-4"><img src="/imgs/recoEPI/Picture1.png" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">B- Modeler la pince
+                                Nasale à la forme
+                                Du nez
+
+                            </div>
+                            <div class="col-4"><img src="/imgs/recoEPI/Picture2.png" alt=""></div>
+                        </div>
+
+                        <h5>Ou Masque FFP2</h5>
+                        <div class="row">
+                            <div class="col-8">A- Prendre un masque FFO dans le creux de la main en laissant pendre les
+                                courroies
+                            </div>
+                            <div class="col-4"><img src="/imgs/recoEPI/Picture3.png" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">B- Placer le masque pour couvrir le menton et le nez
+                            </div>
+                            <div class="col-4"><img src="/imgs/recoEPI/Picture4.png" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">C- Passer la courroie supérieure et la placer sur le dessus de la tête:
+                                passer la courroie inférieure et la placer autour du cou, sous les cheveux
+                            </div>
+                            <div class="col-4"><img src="/imgs/recoEPI/Picture5.png" alt=""></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">D- S’il y a une pince nasale, la modeler à la forme du nez puis effectuer
+                                un test d’étanchéité
+                                (tenir le maque avec la paume des deux mains puis aspirer une bonne bouffée d’air.
+                                Étanchéité bonne si affaissement du masque)
+                            </div>
+                            <div class="col-4"><img src="/imgs/recoEPI/Picture6.png" alt=""></div>
+                        </div>
+
+                        <h5>Etape 3: Protection oculaire </h5>
+                        <p>Porter une visière ou un écran facial</p>
+                        <img src="/imgs/recoEPI/Picture7.png" alt="">
+
+                        <h5>Etape: Gants </h5>
+                        <p>Mettre les gants et couvrir les poignets de la blouse
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4 class="text-center my-1">Etapes pour enlever les EPI
+                        </h4>
+
+                        <h5>Se préparer</h5>
+                        <ul>
+                            <li>Savoir comment procéder avec les déchets</li>
+                        </ul>
+
+                        <div class="w-100"></div>
+
+                        <h5>Etape 1: Retirer mes équipements les plus contaminés</h5>
+                        <h5>A. Gants</h5>
+                        <ul>
+                            <li>Saisir la surface extérieure d’un des gants en le pinçant au haut de la paume</li>
+                            <li>Ecarter le gant de la paume en le tirant vers les doigts et le retourner sur lui-même
+                            </li>
+                            <li>Le chiffonner en boule et le garder dans la main gantée
+                            </li>
+                            <li>Glisser l’index et le majeur nus sous la bande de l’autre gant sans toucher l’extérieur
+                            </li>
+                            <li>Ecarter le gant de la paume en le tirant vers les doigts et le retourner sur lui-même.
+                                L’étirer pour que le premier gant entre dedans. Puis jeter les gants dans un contenant
+                                approprié
+                            </li>
+                        </ul>
+                        <img src="/imgs/recoEPI/Picture8.png" alt="">
+
+                        <h5>B. Blouse</h5>
+                        <ul>
+                            <li>Détacher la blouse sans se contaminer</li>
+                            <li>Saisir la base des attaches du cou et ramener la
+                                blouse vers l’avant
+                            </li>
+                            <li>Saisir l’intérieur de la manche opposée, la faire
+                                glisser sans retourner pour dégager la main.
+                            </li>
+                            <li>Avec la main dégagée, procéder de la même façon pour retirer l’autre manche</li>
+                            <li>Rouler la blouse en boule en évitant de toucher l’extérieur</li>
+                            <li>Jeter dans le contenant approprié</li>
+                        </ul>
+                        <img src="/imgs/recoEPI/Picture9.png" alt="">
+
+                        <h5>Etape 2: Retirer la protection oculaire</h5>
+                        <p>Manipuler l’équipement par les côtés ou l’arrière puis le jeter
+                            dans le contenant approprié
+                        </p>
+                        <img src="/imgs/recoEPI/Picture10.png" alt="">
+
+                        <div class="w-100"></div>
+
+                        <h5>Etape 3: Masque chirurgical </h5>
+                        <p>Détacher les attaches du bas puis celles d’en haut sans toucher l’extérieur puis jeter dans
+                            un contenant approprié
+                        </p>
+                        <img src="/imgs/recoEPI/Picture11.png" alt="">
+
+                        <h5>Ou Masque FFP2 </h5>
+                        <p>Pencher la tête légèrement vers l’avant, passer la courroie inférieure par-dessus la tête
+                            puis la courroie supérieure dans toucher le filtre et jeter dans un contenant approprié
+                        </p>
+                        <img src="/imgs/recoEPI/Picture12.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--        Prise med-->
+        <div class="recommendation"
+             data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="recommendation-title"><h3 class="font-weight-normal">3. Prise Médicamenteuse</h3></div>
+            <div class="recommendation-content recommendation-1">
+                <h4 class="text-center my-3">
+                    Quels médicaments un patient peut-il prendre ?
+                </h4>
+
+                <div class="row text-center">
+                    <div class="col-12 col-md-4"
+                         style="background-color: rgba(211,114,114,0.28); border-radius: 20px">
+                        <div class="img-wrapper" style="width: 25%; margin: auto;">
+                            <img src="/imgs/traffic.png" alt="">
+                        </div>
+                        <h5 class="text-center">Corticostéroïdes</h5>
+                        <p><b>Il n’est pas recommandé</b> d’en prendre
+                            en cas de virose et de détresse
+                            respiratoires. Ces derniers devront être
+                            évités car une potentielle augmentation
+                            de la charge virale a été observée chez
+                            les patients atteints de MERS-CoV.</p>
+                        <p>Sauf si indiqué pour d’autres raisons
+                            (Choc septique, BPCO …).</p>
+                    </div>
+                    <div class="col-12 col-md-4"
+                         style="background-color: rgba(211,175,114,0.28); border-radius: 20px">
+                        <div class="img-wrapper" style="width: 25%; margin: auto;">
+                            <img src="/imgs/alert.png" alt="">
+                        </div>
+                        <h5 class="text-center">Anti Inflammatoires
+
+                            Non Stéroïdiens (Ibuprofène+++)</h5>
+                        <p>L’Ibuprofène est connu pour
+                            l’atténuation des symptômes liés à la
+                            fièvre a prouvé une interaction avec
+                            les récepteurs favorisant l’entrée du
+                            Virus SARS-CoV2 dans les cellules(*).
+                            Néanmoins, aucune étude n’a conclu
+                            une relation entre la prise des AINS et
+                            l’aggravation du COVID-19 et le
+                            risque de multiplication du Virus
+                            SARS-CoV2.</p>
+                        <p>Cela dit, <b>il serait recommandé de
+                            prendre du paracétamol</b> pour le
+                            traitement symptômes reliés au
+                            COVID-19</p>
+                    </div>
+                    <div class="col-12 col-md-4"
+                         style="background-color: rgba(163,211,114,0.28); border-radius: 20px">
+                        <div class="img-wrapper" style="width: 25%; margin: auto;">
+                            <img src="/imgs/tick.png" alt="">
+                        </div>
+                        <h5 class="text-center">Inhibiteurs des Récepteurs
+                            angiotensine II / Inhibiteurs Enzyme de
+                            conversion</h5>
+                        <p>Médicaments utilisés dans le
+                            traitement du diabète et l’hypertension
+                            artérielle, seraient aussi associés à
+                            l’interaction avec les récepteurs
+                            favorisant l’entrée du Virus SARS-CoV2
+                            dans les cellules(*). Néanmoins, aucune
+                            étude ne met en évidence le risque
+                            élevé d’infection par COVID-19.</p>
+                        <p><b>Les patients peuvent continuer leur
+                            traitement</b></p>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-12"
+                         style="background-color: rgba(114,172,211,0.28); border-radius: 20px; padding: 12px;">
+                        <h5 class="text-center">Paracétamol (Acétaminophène) : Mode de prise(**)</h5>
+                        <ul>
+                            <li>Prendre la dose la plus faible, le moins longtemps possible</li>
+                            <li>Respecter la dose maximale par prise, la dose maximale quotidienne, l’intervalle minimum
+                                entre les prises et la durée
+                                maximale de traitement recommandée (3 jours en cas de fièvre, 5 jours en cas de douleur,
+                                en l’absence d’ordonnance)
+                            </li>
+                            <li>Vérifier la présence de paracétamol dans les autres médicaments (utilisés pour douleurs,
+                                fièvre, allergies, symptômes
+                                du rhume ou état grippal)
+                            </li>
+                            <li>Alerter les populations particulières (-50kg, insuffisance hépatique légère à modérée,
+                                insuffisance rénale sévère,
+                                alcoolisme chronique…)
+                            </li>
+                            <li>En l’absence de symptôme, Délivrer une boite de paracétamol (500 mg ou 1g).</li>
+                            <li>En cas de symptômes (douleurs et/ou fièvre), délivrer 2 boites (500 mg ou 1g).</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="js/recommendations.js"></script>
+    </div>
+
+    <!--Script-->
+    <script src="js/headerAbout.js"></script>
+    <script src="js/scrollEvent.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
+</div>
+</body>
+</html>

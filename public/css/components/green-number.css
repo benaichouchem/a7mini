@@ -1,0 +1,41 @@
+.green-number {
+    background-color: #44c27e;
+    color: white;
+    left: 0;
+    top: 20%;
+    padding: 5px 10px;
+    width: 10%;
+    min-width: 150px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 1px 2px 10px rgba(16, 76, 31, 0.38);
+    z-index: 1;
+}
+.green-number h3.mobile-num  {
+    display: none;
+}
+
+.green-number img {
+    width: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .green-number {
+        width: auto;
+        min-width: unset;
+        top: unset;
+        bottom: 10%;
+    }
+
+    .green-number img {
+        margin-bottom: 10px;
+    }
+
+    .green-number h3 {
+        display: none;
+    }
+
+    .green-number h3.mobile-num {
+        display: block;
+    }
+}
