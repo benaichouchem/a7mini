@@ -22,6 +22,9 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(express.static(path.resolve(__dirname, 'public')));
+
+
 app.use('/', indexRouter);
 console.log('getData');
 app.use('/getData', dataRouter);
@@ -44,8 +47,6 @@ app.get("/google-spreadsheet", async function(req, res){
     const rows = await sheet.getRows();
     res.send(rows[0].worldDeaths);
 });
-
-// app.use(express.static(path.resolve(__dirname, 'public')));
 
 
 
