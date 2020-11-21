@@ -2,8 +2,30 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+async function GetSecretWithName(secretName) {
+    
+    const name = secretName;
+  
+    // Imports the Secret Manager library
+    const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
+  
+    // Instantiates a client
+    const client = new SecretManagerServiceClient();
+    try {
+      const [secret] = await client.getSecret({
+        name: name,
+      });   
+     return secret.name;
 
-// variables necessary for using google sheets api
+    }
+    catch (e) {
+      console.log(e, "ERROR");
+
+    }
+    
+  }
+
+
 var fs              = require('fs'),
     readline        = require('readline'),
     {google}        = require('googleapis'),
@@ -30,9 +52,10 @@ console.log('getData');
 app.use('/getData', dataRouter);
 
 app.get("/google-spreadsheet", async function(req, res){
-
     // Identifying which document we'll be accessing/reading from
-    const doc = new GoogleSpreadsheet('1OIMpTY_78r8x_SOFOh57TUnFQVrjUqqhfi-rl09DPeA');
+    var dataSecret = await GetSecretWithName('projects/a7mini/secrets/MasterDataSheet');
+
+    const doc = new GoogleSpreadsheet(dataSecret);
 
     // Authentication
     await doc.useServiceAccountAuth(creds);

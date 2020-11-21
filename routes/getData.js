@@ -3,11 +3,40 @@ var router = express.Router();
 var {GoogleSpreadsheet} = require('google-spreadsheet'),
     creds             = require('../credits/hackit-website-6f4bd70a0ff9');
 
+    async function GetSecretWithName(secretName) {
+    
+        const name = secretName;
+      
+        // Imports the Secret Manager library
+        const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
+      
+        // Instantiates a client
+        const client = new SecretManagerServiceClient();
+        try {
+          const [secret] = await client.getSecret({
+            name: name,
+          });   
+         return secret.name;
+    
+        }
+        catch (e) {
+          console.log(e, "ERROR");
+    
+        }
+        
+      }
 /* GET users listing. */
 router.get('/', async function (req, res, next) {
     // Identifying which document we'll be accessing/reading from
-    const doc = new GoogleSpreadsheet('1OIMpTY_78r8x_SOFOh57TUnFQVrjUqqhfi-rl09DPeA');
+    try {
+        var userSecret = await GetSecretWithName('projects/a7mini/secrets/MasterDataSheet');
+    }
+    catch (e) {
+        console.log(e, "ERROR");
+        return;
+    }
 
+    const doc = new GoogleSpreadsheet(userSecret);
     // Authentication
     await doc.useServiceAccountAuth(creds);
 
