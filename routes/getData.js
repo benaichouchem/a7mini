@@ -13,10 +13,12 @@ var {GoogleSpreadsheet} = require('google-spreadsheet'),
         // Instantiates a client
         const client = new SecretManagerServiceClient();
         try {
-          const [secret] = await client.getSecret({
-            name: name,
-          });   
-         return secret.name;
+            const [secretVersion] = await client.accessSecretVersion({
+                name: name,
+            }); 
+
+            const payload = secretVersion.payload.data.toString();
+            return payload;
     
         }
         catch (e) {
@@ -24,12 +26,12 @@ var {GoogleSpreadsheet} = require('google-spreadsheet'),
     
         }
         
-      }
+    }
 /* GET users listing. */
 router.get('/', async function (req, res, next) {
     // Identifying which document we'll be accessing/reading from
     try {
-        var userSecret = await GetSecretWithName('projects/a7mini/secrets/MasterDataSheet');
+        var userSecret = await GetSecretWithName('projects/a7mini/secrets/MasterDataSheet/versions/2');
     }
     catch (e) {
         console.log(e, "ERROR");

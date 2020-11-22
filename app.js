@@ -5,26 +5,26 @@ var logger = require('morgan');
 async function GetSecretWithName(secretName) {
     
     const name = secretName;
-  
+      
     // Imports the Secret Manager library
     const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
-  
+    
     // Instantiates a client
     const client = new SecretManagerServiceClient();
     try {
-      const [secret] = await client.getSecret({
-        name: name,
-      });   
-     return secret.name;
+        const [secretVersion] = await client.accessSecretVersion({
+            name: name,
+        }); 
+
+        const payload = secretVersion.payload.data.toString();
+        return payload;
 
     }
     catch (e) {
-      console.log(e, "ERROR");
+        console.log(e, "ERROR");
 
-    }
-    
+    }   
   }
-
 
 var fs              = require('fs'),
     readline        = require('readline'),
@@ -53,7 +53,7 @@ app.use('/getData', dataRouter);
 
 app.get("/google-spreadsheet", async function(req, res){
     // Identifying which document we'll be accessing/reading from
-    var dataSecret = await GetSecretWithName('projects/a7mini/secrets/MasterDataSheet');
+    var dataSecret = await GetSecretWithName('projects/a7mini/secrets/MasterDataSheet/versions/2');
 
     const doc = new GoogleSpreadsheet(dataSecret);
 
