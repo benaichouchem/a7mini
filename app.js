@@ -26,11 +26,6 @@ async function GetSecretWithName(secretName) {
     }   
   }
 
-var fs              = require('fs'),
-    readline        = require('readline'),
-    {google}        = require('googleapis'),
-    request         = require('request');
-
 
 // Defining our application routes
 var indexRouter = require('./routes/index');
